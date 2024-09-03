@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <% messages.forEach(message => { %>
+    <p>
+      <!-- <span><%= message.added %> </span> -->
+      <span><%= message.user %>: </span>
+      <span><%= message.text%></span>
+      <span>
+        <a href="/<%= message.id %>">
+          <button>info</button>
+        </a>
+      </span>
+    </p>
+    <% }) %>
+    <a href="/new">
+      <button>New Message</button>
+    </a>
+  </body>
+</html>
