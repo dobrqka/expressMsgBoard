@@ -2,9 +2,8 @@
   <body>
     <% messages.forEach(message => { %>
     <p>
-      <!-- <span><%= message.added %> </span> -->
-      <span><%= message.user %>: </span>
-      <span><%= message.text%></span>
+      <span><%= message.username %>: </span>
+      <span><%= message.message%></span>
       <span>
         <a href="/<%= message.id %>">
           <button>info</button>
@@ -15,5 +14,8 @@
     <a href="/new">
       <button>New Message</button>
     </a>
+    <form method="GET" action="/delete">
+      <button type="submit">Delete Messages</button>
+    </form>
   </body>
 </html>
