@@ -4,7 +4,8 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "npm install"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
